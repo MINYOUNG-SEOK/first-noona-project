@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff; 
-    background-color: #1e1e1e; 
+    background-color: #49abed; 
     transition: background-color 1s ease; 
     }
     
@@ -111,7 +111,7 @@ body {
     #answer {
         position: fixed;
         bottom: 20px;
-        right: 20px;
+        right: 73vh;
         font-size: 1.5rem; /* 반응형 폰트 크기 */
         margin-top: 0.5rem; /* 간격 조정 */
         font-weight: bold;

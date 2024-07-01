@@ -77,6 +77,7 @@ document.getElementById('result').textContent = 'Up!';
 } else {
 document.getElementById('result').textContent = "Bingo!";
 document.getElementById('userGuess').disabled = true; // 정답 맞추면 입력 필드 비활성화
+submitBtn.disabled = true; 
 }
 
 document.getElementById('attempts').textContent = attempts;

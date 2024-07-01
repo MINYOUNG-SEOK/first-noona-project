@@ -35,6 +35,10 @@ document.getElementById('attempts').textContent = attempts;
 document.getElementById('result').textContent = '';
 document.getElementById('userGuess').value = '';
 document.getElementById('userGuess').disabled = false; // 게임 재시작 시 입력 필드 활성화
+
+
+document.getElementById('answer').textContent = ''; // 초기화
+            document.getElementById('answer').textContent= `Answer : ${randomNumber}`;
 }
 
 function checkGuess(event) {
@@ -80,6 +84,7 @@ document.getElementById('attempts').textContent = attempts;
 if (attempts === 0) {
 alert(`Game Over! The answer is ${randomNumber}.`);
 document.getElementById('userGuess').disabled = true;
+submitBtn.disabled = true; 
 }
 }
 }

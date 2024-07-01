@@ -106,5 +106,8 @@ document.getElementById('userGuess').addEventListener('focus', function() {
 
 // Reset 버튼 처리
 document.getElementById('resetBtn').addEventListener('click', function() {
+    event.preventDefault(); // 기본 동작 방지
     startGame();
+
+
 });

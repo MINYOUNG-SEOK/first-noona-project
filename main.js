@@ -1,17 +1,17 @@
 // 배경색 바꾸기
 function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
 }
 
 function changeBackgroundColor() {
-    var body = document.querySelector('body');
+    let body = document.querySelector('body');
     setInterval(function() {
-        var newColor = getRandomColor();
+        let newColor = getRandomColor();
         body.style.backgroundColor = newColor;
     }, 2000); 
 }
@@ -23,8 +23,8 @@ let randomNumber;
 let attempts;
 let previousGuess;
 
-function startGame() {
 // 초기화
+function startGame() {
 randomNumber = generateRandomNumber(1, 100);
 attempts = 3;
 previousGuess = null; // 이전 추측 초기화
@@ -39,6 +39,9 @@ document.getElementById('userGuess').disabled = false; // 게임 재시작 시 �
 
 document.getElementById('answer').textContent = ''; // 초기화
             document.getElementById('answer').textContent= `Answer : ${randomNumber}`;
+
+            let submitBtn = document.getElementById('submitBtn');
+    submitBtn.disabled = false;
 }
 
 function checkGuess(event) {

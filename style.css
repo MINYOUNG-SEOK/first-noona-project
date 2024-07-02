@@ -86,19 +86,19 @@ body {
     }
 
     #resetBtn {
-        padding: 0.75rem 1.25rem; /* 패딩 조정 */
-        font-size: 1rem; /* 반응형 폰트 크기 */
-        background-color: #e42828;
-        color: #fdfbfb;
-        border: none;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        }
+    padding: 0.75rem 1.25rem; /* 패딩 조정 */
+    font-size: 1rem; /* 반응형 폰트 크기 */
+    background-color: #e42828;
+    color: #fdfbfb;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
         
-        #resetBtn:hover {
-        background-color: #8a0303;
-        }
+    #resetBtn:hover {
+    background-color: #8a0303;
+    }
     
     #result {
     font-size: 1.5rem; /* 반응형 폰트 크기 */
@@ -111,7 +111,9 @@ body {
     #answer {
         position: fixed;
         bottom: 20px;
-        right: 73vh;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
         font-size: 1.5rem; /* 반응형 폰트 크기 */
         margin-top: 0.5rem; /* 간격 조정 */
         font-weight: bold;
